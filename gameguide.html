@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gameplay Guide</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+      header {
+        background: linear-gradient(90deg, #e60000, #b30000);
+        padding: 30px 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .content-box {
+        background: #1f1f1f;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      .btn-custom {
+        background: #e60000;
+        color: white;
+        border: none;
+      }
+      .btn-custom:hover {
+        background: #ff3333;
+      }
+      footer {
+        background: #1f1f1f;
+        padding: 10px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      footer {
+        background: #000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footer-section {
+        flex: 1;
+        text-align: center;
+      }
+      .footer-section a {
+        color: red;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+      }
+      .footer-section a:hover {
+        text-decoration: underline;
+      }
+      .footer-input {
+        background: black;
+        color: white;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 5px;
+        width: 80%;
+      }
+      .footer-button {
+        background: red;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background: #333;
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background 0.3s, color 0.3s;
+      }
+      nav a:hover {
+        background: #ff4b2b;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .search-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .search-container input {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .home-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+    </style>
+    <script>
+      function showHint() {
+        document.getElementById("hint-text").innerHTML =
+          "Look out for hidden doors in level 3!";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Gameplay Guide & Easter Eggs</h1>
+    </header>
+    <nav>
+      <a href="index.html"
+        ><img src="./Carousel/home.png" alt="Home" class="home-icon"
+      /></a>
+      <a href="gamenews.html">Gaming News</a>
+      <a href="gameupdates.html">Game Updates</a>
+      <a href="gameguide.html">Game Guide</a>
+      <a href="esports.html">Esports & Tournaments</a>
+      <a href="contact me.html">Contact Me</a>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for games, updates, guides..." />
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Easter Eggs Section -->
+        <div class="col-md-6">
+          <div class="content-box">
+            <h2 class="text-danger">Hidden Easter Eggs</h2>
+            <p>
+              Discover hidden features and secret messages in your favorite
+              games.
+            </p>
+            <button class="btn btn-custom" onclick="showHint()">
+              Reveal a Hint
+            </button>
+            <p id="hint-text" class="mt-2 text-info"></p>
+          </div>
+        </div>
+
+        <!-- Gameplay Tips Section -->
+        <div class="col-md-6">
+          <div class="content-box">
+            <h2 class="text-danger">Easy Ways to Progress</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Upgrade weapons early for easier battles.
+              </li>
+              <li class="list-group-item">
+                Save in-game currency for rare items.
+              </li>
+              <li class="list-group-item">
+                Complete side quests for extra XP and rewards.
+              </li>
+              <li class="list-group-item">
+                Use stealth tactics to avoid unnecessary fights.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- YouTube Gameplay Tips -->
+        <div class="col-md-12">
+          <div class="content-box">
+            <h2 class="text-danger text-center">
+              Gameplay Tips & Walkthroughs
+            </h2>
+            <div class="d-flex justify-content-center">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Gameplay Tips"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- Advanced Tricks and Strategies -->
+        <div class="col-md-6">
+          <div class="content-box">
+            <h2 class="text-danger">Pro Tips</h2>
+            <p>Master advanced game mechanics with these strategies.</p>
+            <ol class="list-group">
+              <li class="list-group-item">
+                Learn enemy patterns to predict their moves.
+              </li>
+              <li class="list-group-item">
+                Utilize terrain for tactical advantages.
+              </li>
+              <li class="list-group-item">
+                Practice combos to maximize damage output.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Featured Player Profiles -->
+        <div class="col-md-6">
+          <div class="content-box">
+            <h2 class="text-danger">Featured Players</h2>
+            <p>Check out some of the best gamers in the community.</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                John "ShadowMaster" Doe - Ranked #1 in Battle Royale
+              </li>
+              <li class="list-group-item">
+                Lisa "StealthQueen" Smith - Known for unbeatable stealth
+                strategies
+              </li>
+              <li class="list-group-item">
+                Michael "ComboKing" Lee - Master of complex move combinations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <h4>STAY IN TOUCH</h4>
+        <p>🎮 Follow us for the latest gaming news</p>
+        <p>📩 support@gaminginfohub.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>JOIN OUR COMMUNITY</h4>
+        <input
+          type="text"
+          class="footer-input"
+          placeholder="Enter your email here*"
+        />
+        <button class="footer-button">Sign Up</button>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#">Latest Game Releases</a>
+        <a href="esports.html">Esports Tournaments</a>
+        <a href="gameupdates.html">Patch Notes & Updates</a>
+        <a href="#">Gaming Merchandise</a>
+        <a href="contact me.html">Contact Us</a>
+      </div>
+      <p>&copy; 2025 Gameplay Guide. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

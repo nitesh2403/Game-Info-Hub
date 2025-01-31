@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Game News & Upcoming Releases</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showWarning() {
+        alert("Yet to be Updated");
+      }
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #121212;
+        color: #f5f5f5;
+      }
+      header {
+        background: linear-gradient(90deg, #e60000, #b30000);
+        padding: 30px 20px;
+        text-align: center;
+        color: white;
+      }
+      .news-item {
+        display: flex;
+        align-items: center;
+        background: #1f1f1f;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+      }
+      .news-item:hover {
+        transform: scale(1.02);
+      }
+      .news-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+        margin-right: 15px;
+        position: relative;
+        overflow: hidden;
+      }
+      .news-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .news-image .game-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        border-radius: 10px;
+      }
+      .news-image:hover .game-info {
+        opacity: 1;
+      }
+      .featured-section {
+        background: #1f1f1f;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      .btn-custom {
+        background: #e60000;
+        color: white;
+        border: none;
+      }
+      .btn-custom:hover {
+        background: #ff3333;
+      }
+      footer {
+        background: #222;
+        padding: 15px;
+        text-align: center;
+        margin-top: 30px;
+        color: white;
+      }
+      footer {
+        background: #000;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footer-section {
+        flex: 1;
+        text-align: center;
+      }
+      .footer-section a {
+        color: red;
+        text-decoration: none;
+        display: block;
+        margin: 5px 0;
+      }
+      .footer-section a:hover {
+        text-decoration: underline;
+      }
+      .footer-input {
+        background: black;
+        color: white;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 5px;
+        width: 80%;
+      }
+      .footer-button {
+        background: red;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 5px;
+        cursor: pointer;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background: #333;
+        padding: 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background 0.3s, color 0.3s;
+      }
+      nav a:hover {
+        background: #ff4b2b;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .search-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .search-container input {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      .home-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Latest Game News & Upcoming Releases</h1>
+    </header>
+    <nav>
+      <a href="index.html"
+        ><img src="./Carousel/home.png" alt="Home" class="home-icon"
+      /></a>
+      <a href="gamenews.html">Gaming News</a>
+      <a href="gameupdates.html">Game Updates</a>
+      <a href="gameguide.html">Game Guide</a>
+      <a href="esports.html">Esports & Tournaments</a>
+      <a href="contact me.html">Contact Me</a>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" placeholder="Search for games, updates, guides..." />
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-8">
+          <h2 class="text-danger">Latest News</h2>
+          <div class="news-item">
+            <div class="news-image">
+              <img src="./Carousel/logo1.jpg" alt="Game 1" />
+              <div class="game-info">
+                <p>Price: Rs.4000</p>
+                <p>Platforms: PC, PS5, Xbox</p>
+              </div>
+            </div>
+            <div>
+              <h3>Cyber Strike Released!</h3>
+              <p>
+                The futuristic open-world game Cyber Strike has just launched
+                with stunning visuals and an immersive storyline.
+              </p>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-image">
+              <img src="./Carousel/logo2.jpg" alt="Game 2" />
+              <div class="game-info">
+                <p>Price: Rs.5999</p>
+                <p>Platforms: PC, Switch</p>
+              </div>
+            </div>
+            <div>
+              <h3>Dark Legends Announced</h3>
+              <p>
+                Dark Legends is an upcoming RPG that blends horror elements with
+                action-packed combat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 featured-section">
+          <h2 class="text-danger">Upcoming Games</h2>
+          <ul class="list-group">
+            <li class="list-group-item">Battle Arena X - Releasing Q3 2025</li>
+            <li class="list-group-item">Sky Warriors 2 - Coming in December</li>
+            <li class="list-group-item">
+              Legends of Mythica - Early Access Available Now
+            </li>
+            <li class="list-group-item">Cyber Warzone - Pre-Orders Open</li>
+          </ul>
+          <button class="btn btn-custom mt-3" onclick="showWarning()">
+            View Full List
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-section">
+        <h4>STAY IN TOUCH</h4>
+        <p>🎮 Follow us for the latest gaming news</p>
+        <p>📩 support@gaminginfohub.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>JOIN OUR COMMUNITY</h4>
+        <input
+          type="text"
+          class="footer-input"
+          placeholder="Enter your email here*"
+        />
+        <button class="footer-button">Sign Up</button>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="#">Latest Game Releases</a>
+        <a href="esports.html">Esports Tournaments</a>
+        <a href="gameupdates.html">Patch Notes & Updates</a>
+        <a href="#">Gaming Merchandise</a>
+        <a href="contact me.html">Contact Us</a>
+      </div>
+      <p>&copy; 2025 Game News. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
